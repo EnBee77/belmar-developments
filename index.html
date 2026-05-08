@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Belmar Developments — Homes that grow with you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="stylesheet" href="assets/property.css" />
+</head>
+<body>
+
+<!-- =================== TOP NAV =================== -->
+<nav class="top-nav">
+  <a href="index.html" class="wordmark sm">
+    <div class="name">Belmar</div>
+    <div class="rule"></div>
+    <div class="tag">Developments</div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link active" href="#properties">Properties</a>
+    <a class="nav-link collapse-on-mobile" href="#story">About</a>
+    <a class="nav-link collapse-on-mobile" href="#press">Press</a>
+    <a class="nav-link collapse-on-mobile" href="#register">Contact</a>
+  </div>
+  <button class="nav-cta" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Register</button>
+</nav>
+
+<!-- =================== HERO =================== -->
+<header class="home-hero">
+  <div class="establish">Established Vancouver, 1978</div>
+  <div class="wordmark xl reveal in">
+    <div class="name">Belmar</div>
+    <div class="rule"></div>
+    <div class="tag">Developments</div>
+  </div>
+  <div class="scroll-cue">Discover</div>
+</header>
+
+<!-- =================== INTRO =================== -->
+<section class="intro-block reveal">
+  <div class="eyebrow"><span class="dot"></span>Three communities, one family</div>
+  <h2 class="serif">Homes built to be lived in for <em class="italic">generations</em>.</h2>
+  <p>For nearly five decades, Belmar has been quietly shaping the neighbourhoods of British Columbia — one street, one porch, one front door at a time. Each of our communities is designed with a single question in mind: <em>what does it take to make a place feel like home?</em></p>
+</section>
+
+<!-- =================== TILES =================== -->
+<section class="tiles-section" id="properties">
+  <div class="tiles">
+
+    <!-- Tile 1: Belmar Residences (Coming Soon) -->
+    <a href="properties/belmar-residences.html" class="tile reveal">
+      <div class="tile-img" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80');"></div>
+      <div class="tile-overlay"></div>
+      <div class="tile-num">No. 01</div>
+      <button class="tile-cta" data-register="highrise" onclick="event.preventDefault();event.stopPropagation();document.getElementById('homeType').value=this.dataset.register;document.getElementById('register').scrollIntoView({behavior:'smooth'})">Register Now</button>
+      <div class="tile-content">
+        <div class="tile-status coming-soon">Coming Soon</div>
+        <h3>The Belmar<br/>Residences</h3>
+        <p style="color: rgba(241, 235, 224, 0.85); font-size: 14px; max-width: 32ch;">A landmark high-rise in Mount Pleasant, where the city meets the mountains.</p>
+        <div class="tile-meta">
+          <div>Type<span>High Rise</span></div>
+          <div>Homes<span>184</span></div>
+          <div>Launch<span>Fall 2026</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Tile 2: Robertville (Now Selling) -->
+    <a href="properties/robertville.html" class="tile reveal">
+      <div class="tile-img" style="background-image: url('https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&q=80');"></div>
+      <div class="tile-overlay"></div>
+      <div class="tile-num">No. 02</div>
+      <button class="tile-cta" data-register="townhome" onclick="event.preventDefault();event.stopPropagation();document.getElementById('homeType').value=this.dataset.register;document.getElementById('register').scrollIntoView({behavior:'smooth'})">Book Your Appointment</button>
+      <div class="tile-content">
+        <div class="tile-status now-selling">Now Selling · 50% Sold</div>
+        <h3>Robertville</h3>
+        <p style="color: rgba(241, 235, 224, 0.85); font-size: 14px; max-width: 32ch;">Twenty West Coast modern townhomes on a quiet North Burnaby cul-de-sac.</p>
+        <div class="tile-meta">
+          <div>Type<span>Townhome</span></div>
+          <div>Homes<span>20</span></div>
+          <div>From<span>$1.39M</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Tile 3: Brinley Estates (Move In Today) -->
+    <a href="properties/brinley-estates.html" class="tile reveal">
+      <div class="tile-img" style="background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80');"></div>
+      <div class="tile-overlay"></div>
+      <div class="tile-num">No. 03</div>
+      <button class="tile-cta" data-register="detached" onclick="event.preventDefault();event.stopPropagation();document.getElementById('homeType').value=this.dataset.register;document.getElementById('register').scrollIntoView({behavior:'smooth'})">Book Your Appointment</button>
+      <div class="tile-content">
+        <div class="tile-status move-in">Move In Today</div>
+        <h3>Brinley<br/>Estates</h3>
+        <p style="color: rgba(241, 235, 224, 0.85); font-size: 14px; max-width: 32ch;">Single-family homes ready for keys, on tree-lined streets in South Surrey.</p>
+        <div class="tile-meta">
+          <div>Type<span>Detached</span></div>
+          <div>Available<span>6 of 20</span></div>
+          <div>From<span>$1.79M</span></div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- =================== STORY STRIP =================== -->
+<section id="story" class="tight reveal" style="background: var(--bg-deep);">
+  <div class="container">
+    <div class="story-grid">
+      <div class="fade-img story-img">
+        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80" alt="A Belmar family home" />
+      </div>
+      <div class="story-text">
+        <div class="eyebrow"><span class="dot"></span>Our story</div>
+        <h2 class="serif" style="margin-top: 16px;">Three generations of <em class="italic">building well</em>.</h2>
+        <p>Belmar started in 1978 with a single duplex in East Vancouver and the conviction that good homes are built the way good furniture is — slowly, by hand, with the next owner already in mind.</p>
+        <p>Five decades and forty-six communities later, we're still a family business. Our founder's grandchildren walk every site. We answer our own phones. And we still believe that the measure of a builder is not how a home looks the day it sells, but how it feels twenty years on.</p>
+        <button class="btn ghost" style="margin-top: 12px;">More about Belmar <span class="arrow">&rarr;</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PRESS & TESTIMONIALS =================== -->
+<section id="press" class="reveal">
+  <div class="container">
+    <div class="section-head" style="margin-bottom: 48px;">
+      <div>
+        <div class="eyebrow"><span class="dot"></span>What our homeowners say</div>
+        <h2 class="serif" style="margin-top: 16px;">Built on <em class="italic">trust</em>.</h2>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-bottom: 80px;">
+
+      <div style="padding: 32px; background: var(--bg-deep); border-radius: 4px;">
+        <blockquote class="serif" style="font-size: 1.15rem; font-style: italic; line-height: 1.45; margin: 0 0 20px;">
+          "We bought our first Belmar home thirty-two years ago. We're now buying our third — for our daughter."
+        </blockquote>
+        <div class="eyebrow" style="color: var(--ink);">— Maria &amp; Eduardo Cardosa</div>
+        <div style="font-size: 13px; color: var(--ink-mute); margin-top: 4px;">Robertville buyers · Returning homeowners</div>
+      </div>
+
+      <div style="padding: 32px; background: var(--bg-deep); border-radius: 4px;">
+        <blockquote class="serif" style="font-size: 1.15rem; font-style: italic; line-height: 1.45; margin: 0 0 20px;">
+          "As a single mom, I needed a builder I could trust with my life savings. Belmar walked me through every step and never once made me feel like a small buyer."
+        </blockquote>
+        <div class="eyebrow" style="color: var(--ink);">— Priya Anand</div>
+        <div style="font-size: 13px; color: var(--ink-mute); margin-top: 4px;">Belmar Residences registrant · First-time buyer</div>
+      </div>
+
+      <div style="padding: 32px; background: var(--bg-deep); border-radius: 4px;">
+        <blockquote class="serif" style="font-size: 1.15rem; font-style: italic; line-height: 1.45; margin: 0 0 20px;">
+          "We moved from Hong Kong and didn't know a single contractor in BC. Our Brinley home was flawless on delivery — not a single deficiency at our walkthrough."
+        </blockquote>
+        <div class="eyebrow" style="color: var(--ink);">— James &amp; Sophie Chen</div>
+        <div style="font-size: 13px; color: var(--ink-mute); margin-top: 4px;">Brinley Estates · Lot 3</div>
+      </div>
+
+      <div style="padding: 32px; background: var(--bg-deep); border-radius: 4px;">
+        <blockquote class="serif" style="font-size: 1.15rem; font-style: italic; line-height: 1.45; margin: 0 0 20px;">
+          "My wife and I are both in wheelchairs. Belmar redesigned our entire main floor at no extra cost so we could live independently. That's not a builder — that's a neighbour."
+        </blockquote>
+        <div class="eyebrow" style="color: var(--ink);">— Derek &amp; Anne Lawson</div>
+        <div style="font-size: 13px; color: var(--ink-mute); margin-top: 4px;">Brinley Estates · Lot 11</div>
+      </div>
+
+      <div style="padding: 32px; background: var(--bg-deep); border-radius: 4px;">
+        <blockquote class="serif" style="font-size: 1.15rem; font-style: italic; line-height: 1.45; margin: 0 0 20px;">
+          "I've sold over forty new-build projects in my career. Belmar is the only developer whose buyers call me to say thank you a year after closing."
+        </blockquote>
+        <div class="eyebrow" style="color: var(--ink);">— Rachel Okafor</div>
+        <div style="font-size: 13px; color: var(--ink-mute); margin-top: 4px;">Realtor · RE/MAX Crest Realty</div>
+      </div>
+
+    </div>
+
+    <div style="border-top: 1px solid var(--ink-mute); padding-top: 48px;">
+      <div class="eyebrow" style="margin-bottom: 32px;"><span class="dot"></span>Awards &amp; recognition</div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; text-align: center;">
+
+        <div style="padding: 24px;">
+          <div class="serif italic" style="font-size: 2rem; color: var(--accent);">2025</div>
+          <div style="font-weight: 500; margin: 8px 0 4px;">Top Home Builder</div>
+          <div style="font-size: 13px; color: var(--ink-mute);">BC Builders Association</div>
+        </div>
+
+        <div style="padding: 24px;">
+          <div class="serif italic" style="font-size: 2rem; color: var(--accent);">2025</div>
+          <div style="font-weight: 500; margin: 8px 0 4px;">Best Customer Care</div>
+          <div style="font-size: 13px; color: var(--ink-mute);">BC Builders Association</div>
+        </div>
+
+        <div style="padding: 24px;">
+          <div class="serif italic" style="font-size: 2rem; color: var(--accent);">2024</div>
+          <div style="font-weight: 500; margin: 8px 0 4px;">Top Home Design</div>
+          <div style="font-size: 13px; color: var(--ink-mute);">BC Builders Association</div>
+        </div>
+
+        <div style="padding: 24px;">
+          <div class="serif italic" style="font-size: 2rem; color: var(--accent);">2024</div>
+          <div style="font-weight: 500; margin: 8px 0 4px;">Best Sales Team</div>
+          <div style="font-size: 13px; color: var(--ink-mute);">BC Builders Association</div>
+        </div>
+
+        <div style="padding: 24px;">
+          <div class="serif italic" style="font-size: 2rem; color: var(--accent);">2023</div>
+          <div style="font-weight: 500; margin: 8px 0 4px;">Top Home Builder</div>
+          <div style="font-size: 13px; color: var(--ink-mute);">BC Builders Association</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =================== REGISTER =================== -->
+<section class="register-section" id="register">
+  <div class="container">
+    <div class="register-grid">
+      <div>
+        <div class="eyebrow" style="color: rgba(241, 235, 224, 0.7);"><span class="dot"></span>Stay connected</div>
+        <h2 class="serif" style="margin-top: 16px;">Be the first to know about <em>what's next</em>.</h2>
+        <p>Register to receive priority access, pricing updates, and invitations to private preview events across all Belmar communities.</p>
+        <div class="register-perks">
+          <div class="register-perk">
+            <div class="num">1</div>
+            <div class="text">
+              <strong>Priority Access</strong>
+              <p>First look at new releases, floor plans, and pricing before public launch.</p>
+            </div>
+          </div>
+          <div class="register-perk">
+            <div class="num">2</div>
+            <div class="text">
+              <strong>Private Events</strong>
+              <p>Exclusive invitations to preview showings and community open houses.</p>
+            </div>
+          </div>
+          <div class="register-perk">
+            <div class="num">3</div>
+            <div class="text">
+              <strong>Market Updates</strong>
+              <p>Neighbourhood insights and construction milestones delivered to your inbox.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form class="register-form" id="register-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" placeholder="Jane" />
+              <span class="err-msg">Required</span>
+            </div>
+            <div class="form-field">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" placeholder="Smith" />
+              <span class="err-msg">Required</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="jane@example.com" />
+              <span class="err-msg">Valid email required</span>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" placeholder="+1 604 555 0000" />
+              <span class="err-msg">Required</span>
+            </div>
+          </div>
+          <div class="form-row single">
+            <div class="form-field">
+              <label for="homeType">Preferred Home Type</label>
+              <select name="homeType" id="homeType">
+                <option value="">Select one…</option>
+                <option value="highrise">High Rise — The Belmar Residences</option>
+                <option value="townhome">Townhome — Robertville</option>
+                <option value="detached">Detached — Brinley Estates</option>
+              </select>
+              <span class="err-msg">Required</span>
+            </div>
+          </div>
+          <div class="form-row single">
+            <div class="form-field">
+              <label>Are you a realtor?</label>
+              <div class="radio-group">
+                <label class="radio-option"><input type="radio" name="realtor" value="no" /> No</label>
+                <label class="radio-option"><input type="radio" name="realtor" value="yes" /> Yes</label>
+              </div>
+            </div>
+          </div>
+          <div class="realtor-fields">
+            <div class="form-field">
+              <label for="realtorName">Your Name</label>
+              <input type="text" name="realtorName" id="realtorName" placeholder="Full name" />
+              <span class="err-msg">Required</span>
+            </div>
+            <div class="form-field">
+              <label for="brokerage">Brokerage</label>
+              <input type="text" name="brokerage" id="brokerage" placeholder="Brokerage name" />
+              <span class="err-msg">Required</span>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">Register Now</button>
+          <p class="form-disclaimer">By registering you agree to receive communications from Belmar Developments. You may unsubscribe at any time. We respect your privacy and will never share your information.</p>
+        </form>
+        <div class="form-success" id="register-success">
+          <h3>Thank you</h3>
+          <p>You're on the list. We'll be in touch with priority updates and event invitations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="wordmark sm" style="align-items: flex-start;">
+          <div class="name">Belmar</div>
+          <div class="rule"></div>
+          <div class="tag">Developments</div>
+        </a>
+        <p class="footer-blurb">Family-built homes on the West Coast since 1978.</p>
+      </div>
+      <div>
+        <h5>Properties</h5>
+        <ul>
+          <li><a href="properties/belmar-residences.html">The Belmar Residences</a></li>
+          <li><a href="properties/robertville.html">Robertville</a></li>
+          <li><a href="properties/brinley-estates.html">Brinley Estates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Belmar</h5>
+        <ul>
+          <li><a>About us</a></li>
+          <li><a>Press</a></li>
+          <li><a>Realtors</a></li>
+          <li><a>Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <ul>
+          <li><a>1804 W 4th Ave<br/>Vancouver, BC V6J 1M3</a></li>
+          <li><a>+1 604 555 0178</a></li>
+          <li><a>hello@belmardev.ca</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Belmar Developments Ltd.</div>
+      <div>Privacy · Terms · Disclosure</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
