@@ -383,8 +383,31 @@ function initRegisterForm() {
 
     if (!ok) return;
 
-    form.style.display = 'none';
-    document.getElementById('register-success').classList.add('show');
+    const btn = form.querySelector('[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    const data = new FormData(form);
+    data.append('_source', document.title);
+
+    fetch('https://formspree.io/f/nbelmar@onni.com', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(res => {
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('register-success').classList.add('show');
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Register Now';
+        alert('Something went wrong. Please try again.');
+      }
+    }).catch(() => {
+      btn.disabled = false;
+      btn.textContent = 'Register Now';
+      alert('Connection error. Please try again.');
+    });
   });
 }
 
